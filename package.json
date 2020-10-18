@@ -1,0 +1,43 @@
+{
+  "name": "@Titaneum/monorepo",
+  "version": "1.0.0",
+  "author": "Titaneum",
+  "license": "UNLICENSED",
+  "keywords": [
+    "ethereum",
+    "defi",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "frontend:build": "yarn workspace @Titaneum/frontend build --max-old-space-size=12288",
+    "frontend:eject": "yarn workspace @Titaneum/frontend eject",
+    "frontend:start": "yarn workspace @Titaneum/frontend start",
+    "frontend:test": "yarn workspace @Titaneum/frontend test",
+    "build": "yarn workspace @Titaneum/frontend build --max-old-space-size=12288",
+    "chain": "yarn workspace @Titaneum/buidler chain",
+    "node": "yarn workspace @Titaneum/buidler chain",
+    "test": "yarn workspace @Titaneum/buidler test",
+    "start": "yarn workspace @Titaneum/frontend start",
+    "compile": "yarn workspace @Titaneum/buidler compile",
+    "deploy": "yarn workspace @Titaneum/buidler deploy",
+    "watch": "yarn workspace @Titaneum/buidler watch",
+    "accounts": "yarn workspace @Titaneum/buidler accounts",
+    "balance": "yarn workspace @Titaneum/buidler balance",
+    "send": "yarn workspace @Titaneum/buidler send",
+    "ipfs": "yarn workspace @Titaneum/frontend ipfs",
+    "surge": "yarn workspace @Titaneum/backend surge",
+    "s3": "yarn workspace @Titaneum/frontend s3",
+    "ship": "yarn workspace @Titaneum/frontend ship",
+    "generate": "cd packages/buidler && npx buidler generate",
+    "account": "cd packages/buidler && npx buidler account",
+    "flatten": "cd packages/buidler && npx buidler flatten"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
